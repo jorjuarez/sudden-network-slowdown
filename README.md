@@ -64,4 +64,4 @@ DeviceProcessEvents
 | project Timestamp, ActionType, FileName, ProcessCommandline, AccountName, InitiatingProcessAccountName, InitiatingProcessParentFileName
 | sort by Timestamp asc
 ```
-**Finding:** This query provided the breakthrough. It revealed that a PowerShell script named [portscan.ps1](https://github.com/jorjuarez/Cybersecurity-Portfolio-Public/edit/main/project-sudden-network-slowdown/README.md#4portscanps1-found-in-device-newwindows10) was executed by the user account `analyst1`, perfectly matching the timeline of the network scan.
+**Finding:** This query provided the breakthrough. It revealed that a PowerShell script named [portscan.ps1](https://github.com/jorjuarez/Cybersecurity-Portfolio-Public/blob/main/project-sudden-network-slowdown/README.md#4portscanps1-found-in-device-newwindows10) was executed by the user account `analyst1`, perfectly matching the timeline of the network scan.
