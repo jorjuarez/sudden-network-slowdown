@@ -68,7 +68,7 @@ DeviceProcessEvents
 
 ---
 
-## Phase 3: Incident Response & Remediation
+### Phase 3: Incident Response & Remediation
 Upon identifying the unauthorized script execution as the root cause, immediate response actions were taken to contain the threat and plan for full recovery.
 
 ### Containment
@@ -91,3 +91,7 @@ This incident highlighted several opportunities to harden the environment agains
 * **Enhanced Monitoring:**
     * Improve logging and create new SIEM/EDR detection rules based on the specific behaviors observed in this incident.
     * Closely monitor the rebuilt `nemwindows10` host for any anomalous activity after it rejoins the network.
+    * 
+    ---
+
+**Conclusion**  This project shows the value of using a structured framework like NIST 800-61 to investigate even minor anomalies with a security lens. This approach allowed us to move with speed, identify a policy violation, and uncover a threat vector before it could escalate into a more serious incident.
