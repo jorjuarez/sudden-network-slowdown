@@ -65,3 +65,29 @@ DeviceProcessEvents
 | sort by Timestamp asc
 ```
 **Finding:** This query provided the breakthrough. It revealed that a PowerShell script named [portscan.ps1](https://github.com/jorjuarez/Cybersecurity-Portfolio-Public/blob/main/project-sudden-network-slowdown/README.md#4portscanps1-found-in-device-newwindows10) was executed by the user account `analyst1`, perfectly matching the timeline of the network scan.
+
+---
+
+## Phase 3: Incident Response & Remediation
+Upon identifying the unauthorized script execution as the root cause, immediate response actions were taken to contain the threat and plan for full recovery.
+
+### Containment
+The affected host, `nemwindows10`, was immediately isolated from the network using Microsoft Defender for Endpoint. This crucial first step prevented any potential lateral movement or further reconnaissance from the machine.
+
+### Eradication & Recovery
+An initial malware scan was performed on the isolated host, which yielded no results. However, due to the suspicious nature of the unauthorized script and to ensure no persistence mechanisms were left behind, a ticket was submitted to reimage and rebuild the host to a known-good, trusted state.
+
+### Strategic Recommendations
+This incident highlighted several opportunities to harden the environment against similar threats. The following strategic recommendations were developed and presented to the relevant teams:
+
+* **Account Security:**
+    * Investigate the `analyst1` account for any signs of compromise.
+    * Enforce an immediate password reset and ensure multi-factor authentication (MFA) is active.
+    * Interview the user to understand the circumstances of the script execution.
+* **PowerShell Hardening:**
+    * Configure the PowerShell Execution Policy to only allow signed or approved scripts.
+    * Use AppLocker or WDAC (Windows Defender Application Control) to whitelist authorized scripts.
+    * Implement Constrained Language Mode for standard users to limit access to sensitive commands.
+* **Enhanced Monitoring:**
+    * Improve logging and create new SIEM/EDR detection rules based on the specific behaviors observed in this incident.
+    * Closely monitor the rebuilt `nemwindows10` host for any anomalous activity after it rejoins the network.
