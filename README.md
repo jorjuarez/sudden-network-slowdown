@@ -1,7 +1,7 @@
 # Threat Hunt: Sudden Network Slowdown
 
 ### Executive Summary
-In this simulated [project](https://github.com/jorjuarez/Cybersecurity-Portfolio-Public/tree/main/project-sudden-network-slowdown#simulating-the-trigger-event), we investigated a significant network slowdown affecting older devices on the corporate network. After ruling out a DDoS attack, the hunt focused internally and traced the source to a single host (`nemwindows10`) running an unauthorized port scan via a PowerShell script. The device was immediately contained, and we developed new security recommendations to prevent similar incidents in the future.
+In this [project](https://github.com/jorjuarez/Cybersecurity-Portfolio-Public/tree/main/project-sudden-network-slowdown#simulating-the-trigger-event), we investigated a significant network slowdown affecting older devices on the corporate network. After ruling out a DDoS attack, the hunt focused internally and traced the source to a single host (`nemwindows10`) running an unauthorized port scan via a PowerShell script. The device was immediately contained, and we developed new security recommendations to prevent similar incidents in the future.
 
 ---
 
