@@ -94,4 +94,5 @@ This incident highlighted several opportunities to harden the environment agains
     * 
     ---
 
-**Conclusion:**  This project shows the value of using a structured framework like NIST 800-61 to investigate even minor anomalies with a security lens. This approach allowed us to move with speed, identify a policy violation, and uncover a threat vector before it could escalate into a more serious incident.
+**Conclusion:**  
+This project shows the value of using a structured framework like NIST 800-61 to investigate even minor anomalies with a security lens. This approach allowed us to move with speed, identify a policy violation, and uncover a threat vector before it could escalate into a more serious incident.
