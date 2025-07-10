@@ -71,13 +71,13 @@ DeviceProcessEvents
 ### Phase 3: Incident Response & Remediation
 Upon identifying the unauthorized script execution as the root cause, immediate response actions were taken to contain the threat and plan for full recovery.
 
-### Containment
+#### Containment
 The affected host, `nemwindows10`, was immediately isolated from the network using Microsoft Defender for Endpoint. This crucial first step prevented any potential lateral movement or further reconnaissance from the machine.
 
-### Eradication & Recovery
+#### Eradication & Recovery
 An initial malware scan was performed on the isolated host, which yielded no results. However, due to the suspicious nature of the unauthorized script and to ensure no persistence mechanisms were left behind, a ticket was submitted to reimage and rebuild the host to a known-good, trusted state.
 
-### Strategic Recommendations
+#### Strategic Recommendations
 This incident highlighted several opportunities to harden the environment against similar threats. The following strategic recommendations were developed and presented to the relevant teams:
 
 * **Account Security:**
@@ -91,8 +91,8 @@ This incident highlighted several opportunities to harden the environment agains
 * **Enhanced Monitoring:**
     * Improve logging and create new SIEM/EDR detection rules based on the specific behaviors observed in this incident.
     * Closely monitor the rebuilt `nemwindows10` host for any anomalous activity after it rejoins the network.
-    * 
+
     ---
 
-**Conclusion:**  
+### Conclusion:  
 This project shows the value of using a structured framework like NIST 800-61 to investigate even minor anomalies with a security lens. This approach allowed us to move with speed, identify a policy violation, and uncover a threat vector before it could escalate into a more serious incident.
