@@ -14,7 +14,7 @@ In this project, we investigated a significant network slowdown affecting older 
 
 ### Phase 2: Investigation & Analysis
 
-The investigation began by querying Microsoft Defender XDR logs to test the hypothesis. The full set of queries used in this hunt can be viewed in the [`KQL-Queries.md`](https://github.com/jorjuarez/Cybersecurity-Portfolio-Public/tree/main/project-sudden-network-slowdown#related-kql-queries) file and are also detailed below for context.
+The investigation began by querying [Microsoft Defender XDR logs](https://github.com/jorjuarez/Cybersecurity-Portfolio-Public/tree/main/project-sudden-network-slowdown#tables-used-to-detect-iocs) to test the hypothesis. The full set of queries used in this hunt can be viewed in the [`KQL-Queries.md`](https://github.com/jorjuarez/Cybersecurity-Portfolio-Public/tree/main/project-sudden-network-slowdown#related-kql-queries) file and are also detailed below for context.
 
 #### 1. Initial Data Analysis: Failed Connections
 The first step was to look for unusual network traffic patterns. A KQL query was used to find hosts with an excessive number of failed connections, which could indicate a port scan.
